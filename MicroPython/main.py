@@ -4,8 +4,8 @@ Created on: Mar 2026
 This module will cycle an RGB LED through its primary and secondary colours with a 1 second delay.
 """
 
-import time
 from microbit import *
+import time
 
 # Initialize display
 display.clear()
