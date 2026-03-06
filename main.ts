@@ -2,14 +2,14 @@
  *
  * Created by: Dat Nguyen
  * Created on: Mar 2026
- * This program will change the colour of an RGB LED.
+ * This program will cycle an RGB LED through its primary and secondary colours with a 1 second delay.
 */
 
 // Initialize display
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
-// Initialize pins to off
+// Initialize pins to OFF
 pins.digitalWritePin(DigitalPin.P14, 0) // Red
 pins.digitalWritePin(DigitalPin.P15, 0) // Green
 pins.digitalWritePin(DigitalPin.P16, 0) // Blue
