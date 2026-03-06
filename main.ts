@@ -15,18 +15,20 @@ pins.digitalWritePin(DigitalPin.P15, 0) // Green.
 pins.digitalWritePin(DigitalPin.P16, 0 )// Blue.
 
 input.onButtonPressed(Button.A, function() {
-    // Turn LED red.
+    // Turn LED red for 1 second.
     pins.digitalWritePin(DigitalPin.P14, 1)
     basic.showString("Red")
-
-    // Wait 1 second.
     basic.pause(1000)
+
+    // Turn LEDs off.
     pins.digitalWritePin(DigitalPin.P14, 0)
 
     // Turn LED green for 1 second.
     pins.digitalWritePin(DigitalPin.P15, 1)
     basic.showString("Green")
     basic.pause(1000)
+
+    // Turn LEDs off.
     pins.digitalWritePin(DigitalPin.P15, 0)
 
     // Turn LED blue for 1 second.
