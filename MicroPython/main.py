@@ -11,7 +11,7 @@ import time
 display.clear()
 display.show(Image.HAPPY)
 
-# Assign pins as constants
+# Define hardware pins as constants
 RED_PIN = pin14
 GREEN_PIN = pin15
 BLUE_PIN = pin16
