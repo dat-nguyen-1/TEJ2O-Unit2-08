@@ -5,11 +5,11 @@
  * This program will cycle an RGB LED through its primary and secondary colours with a 1 second delay.
 */
 
-// Initialize display
+// initialize display
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
-// Initialize pins to OFF
+// initialize pins to OFF
 pins.digitalWritePin(DigitalPin.P14, 0) // Red
 pins.digitalWritePin(DigitalPin.P15, 0) // Green
 pins.digitalWritePin(DigitalPin.P16, 0) // Blue
@@ -67,6 +67,6 @@ input.onButtonPressed(Button.A, function() {
     pins.digitalWritePin(DigitalPin.P15, 0)
     pins.digitalWritePin(DigitalPin.P16, 0)
 
-    // Display happy face
+    // display happy face
     basic.showIcon(IconNames.Happy)
 })
