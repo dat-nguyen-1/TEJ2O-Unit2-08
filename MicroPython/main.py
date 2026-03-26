@@ -7,21 +7,23 @@ This module will cycle an RGB LED through its primary and secondary colours with
 from microbit import *
 import time
 
-# Initialize display
+# initialize display
 display.clear()
 display.show(Image.HAPPY)
 
-# Define hardware pins as constants
+# define hardware pins as constants
 RED_PIN = pin14
 GREEN_PIN = pin15
 BLUE_PIN = pin16
 
-# Initialize pins to OFF
+# initialize pins to OFF
 RED_PIN.write_digital(0)
 GREEN_PIN.write_digital(0)
 BLUE_PIN.write_digital(0)
 
+# main loop
 while True:
+    # handle button a press
     if button_a.is_pressed():
         # Red
         RED_PIN.write_digital(1)
@@ -75,5 +77,5 @@ while True:
         GREEN_PIN.write_digital(0)
         BLUE_PIN.write_digital(0)
 
-        # Display happy face
+        # display happy face
         display.show(Image.HAPPY)
