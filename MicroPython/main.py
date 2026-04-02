@@ -31,19 +31,19 @@ while True:
         time.sleep(1)
         RED_PIN.write_digital(0)
 
-        # Green
+        # green
         GREEN_PIN.write_digital(1)
         display.show("Green")
         time.sleep(1)
         GREEN_PIN.write_digital(0)
 
-        # Blue
+        # blue
         BLUE_PIN.write_digital(1)
         display.show("Blue")
         time.sleep(1)
         BLUE_PIN.write_digital(0)
 
-        # Magenta (Red + Blue)
+        # magenta (red + blue)
         RED_PIN.write_digital(1)
         BLUE_PIN.write_digital(1)
         display.show("Magenta")
@@ -51,7 +51,7 @@ while True:
         RED_PIN.write_digital(0)
         BLUE_PIN.write_digital(0)
 
-        # Cyan (Green + Blue)
+        # cyan (green + blue)
         GREEN_PIN.write_digital(1)
         BLUE_PIN.write_digital(1)
         display.show("Cyan")
@@ -59,7 +59,7 @@ while True:
         GREEN_PIN.write_digital(0)
         BLUE_PIN.write_digital(0)
 
-        # Yellow (Red + Green)
+        # yellow (red + green)
         RED_PIN.write_digital(1)
         GREEN_PIN.write_digital(1)
         display.show("Yellow")
@@ -67,7 +67,7 @@ while True:
         RED_PIN.write_digital(0)
         GREEN_PIN.write_digital(0)
 
-        # White (Red + Green + Blue)
+        # white (red + green + blue)
         RED_PIN.write_digital(1)
         GREEN_PIN.write_digital(1)
         BLUE_PIN.write_digital(1)
@@ -79,3 +79,4 @@ while True:
 
         # display happy face
         display.show(Image.HAPPY)
+        
