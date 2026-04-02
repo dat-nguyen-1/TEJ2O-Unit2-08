@@ -27,26 +27,26 @@ while True:
     if button_a.is_pressed():
         # Red
         RED_PIN.write_digital(1)
-        display.show("Red")
+        display.scroll("Red")
         time.sleep(1)
         RED_PIN.write_digital(0)
 
         # green
         GREEN_PIN.write_digital(1)
-        display.show("Green")
+        display.scroll("Green")
         time.sleep(1)
         GREEN_PIN.write_digital(0)
 
         # blue
         BLUE_PIN.write_digital(1)
-        display.show("Blue")
+        display.scroll("Blue")
         time.sleep(1)
         BLUE_PIN.write_digital(0)
 
         # magenta (red + blue)
         RED_PIN.write_digital(1)
         BLUE_PIN.write_digital(1)
-        display.show("Magenta")
+        display.scroll("Magenta")
         time.sleep(1)
         RED_PIN.write_digital(0)
         BLUE_PIN.write_digital(0)
@@ -54,7 +54,7 @@ while True:
         # cyan (green + blue)
         GREEN_PIN.write_digital(1)
         BLUE_PIN.write_digital(1)
-        display.show("Cyan")
+        display.scroll("Cyan")
         time.sleep(1)
         GREEN_PIN.write_digital(0)
         BLUE_PIN.write_digital(0)
@@ -62,7 +62,7 @@ while True:
         # yellow (red + green)
         RED_PIN.write_digital(1)
         GREEN_PIN.write_digital(1)
-        display.show("Yellow")
+        display.scroll("Yellow")
         time.sleep(1)
         RED_PIN.write_digital(0)
         GREEN_PIN.write_digital(0)
@@ -71,7 +71,7 @@ while True:
         RED_PIN.write_digital(1)
         GREEN_PIN.write_digital(1)
         BLUE_PIN.write_digital(1)
-        display.show("White")
+        display.scroll("White")
         time.sleep(1)
         RED_PIN.write_digital(0)
         GREEN_PIN.write_digital(0)
@@ -79,4 +79,3 @@ while True:
 
         # display happy face
         display.show(Image.HAPPY)
-        
